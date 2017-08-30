@@ -1,0 +1,51 @@
+@for $i from 1 through 4 {
+    h#{i} {
+        font-size: 10px;
+        color: lighten(red, 15% * $i);
+    }
+}
+
+@mixin day($timeOfDay) {
+    @if $timeOfDay==morning {
+        background-color: orange;
+    }
+    @else if $timeOfDay==midday {
+        background-color: yellow;
+    }
+    @else if $timeOfDay==evening {
+        background-color: navy;
+    }
+    @else if $timeOfDay==night {
+        background-color: black;
+    }
+}
+
+body {
+    @include day(night);
+}
+
+@for $i from 1 through 10 {
+    div.block_#{$i} {
+        @if $i % 2==0 {
+            background-color: orange;
+        }
+        @else {
+            background-color: #00f;
+        }
+    }
+}
+
+$number: 0.1;
+$percent: percentage($number);
+$lred: lighten(red, 20%);
+$color1: yellow;
+$color2: blue;
+$mixed_color: mix($color1, $color2);
+@function sum($number1, $number2) {
+    @return $number1+$number2;
+}
+
+p {
+    background-color: $mixed_color;
+    font-size: #{sum(20, 50)}px;
+}
