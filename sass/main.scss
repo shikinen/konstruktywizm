@@ -1,1 +1,10 @@
-@import 'partials/zadania';
+//-------MODULES-------//
+@import 'modules/normalize/import-now';
+@import 'modules/fontface';
+
+//-------PARTIALS-------//
+@import 'partials/logo';
+@import 'partials/base';
+@import 'partials/footer';
+@import 'partials/header';
+@import 'partials/section';

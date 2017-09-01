@@ -1,0 +1,37 @@
+//------VARIABLES------//
+
+// Media Breakpoints
+$tablet: (min-width: 768px);
+
+// Fonts
+$Futura: 'FuturaT', Helvetica, Arial, sans-serif;
+
+// Colors
+
+$red: #f2224a;
+$orange: #ffc83e;
+$aqua: #2cffff;
+
+//--------------------//
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: $Futura;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.border {
+    margin: 0 auto;
+    width: 950px;
+    height: 40px;
+    background: url(../images/border.svg);
+}

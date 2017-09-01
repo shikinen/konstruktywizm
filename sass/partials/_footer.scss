@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.footer__logo {
+    padding-bottom: 2.5em;
+    a {
+        cursor: pointer;
+    }
+}
+
+.footer__copyright {
+    width: 100%;
+    padding: 0.7em;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
