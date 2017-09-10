@@ -1,0 +1,38 @@
+.bio-section {
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$tablet} {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.bio-section__name {
+    padding-bottom: 0;
+}
+
+.bio-section__lifespan {
+    letter-spacing: 0.15em;
+    .birth,
+    .death {
+        color: $red;
+    }
+}
+
+.bio-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$tablet} {
+        flex-direction: row;
+    }
+}
+
+.bio-section_biography {
+    margin-top: 2em;
+    text-align: justify;
+}

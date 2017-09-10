@@ -54,10 +54,11 @@ header {
         flex-flow: column wrap;
     }
     header {
+        padding: 1em;
         nav {
             a {
                 line-height: 50px;
-                margin: 0 10px;
+                margin: 0 5px;
             }
         }
         &.smaller {
