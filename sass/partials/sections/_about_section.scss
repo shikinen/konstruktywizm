@@ -1,0 +1,24 @@
+.about-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$tablet} {
+        flex-direction: row;
+    }
+}
+
+.about-section__infobox {
+    text-align: center;
+    padding: 0.5em 2em;
+    width: 25em;
+    @media #{$tablet} {
+        flex: 1;
+    }
+    h2 {
+        color: $red;
+        font-size: 3em;
+        @media #{$tablet} {
+            font-size: 4em;
+        }
+    }
+}

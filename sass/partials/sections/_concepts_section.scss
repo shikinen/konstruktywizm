@@ -1,0 +1,34 @@
+.concept-section__background {
+    background-color: $red;
+    background-image: -webkit-linear-gradient(-30deg, #000 50%, $red 50%);
+    min-height: 500px;
+}
+
+.concept-section__concepts {
+    color: white;
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    padding: 2em 3em;
+    @media #{$tablet} {
+        padding: 4em 5em;
+    }
+}
+
+.concept-section__concepts-title {
+    color: aqua;
+    padding: 1em 0 0.5em 0;
+    font-size: 2em;
+    text-align: center;
+    @media #{$tablet} {
+        font-size: 2.5em;
+    }
+    &:first-of-type {
+        padding-top: 0px;
+    }
+}
+
+.concept-section__description {
+    span {
+        color: aqua;
+    }
+}

@@ -1,10 +1,18 @@
 //-------MODULES-------//
 @import 'modules/normalize/import-now';
 @import 'modules/fontface';
-
 //-------PARTIALS-------//
 @import 'partials/logo';
 @import 'partials/base';
-@import 'partials/footer';
 @import 'partials/header';
+@import 'partials/footer';
 @import 'partials/section';
+    //-------SECTIONS-------//
+    @import 'partials/sections/shapes_section';
+    @import 'partials/sections/about_section';
+    @import 'partials/sections/concepts_section';
+    @import 'partials/sections/chronology_section';
+    @import 'partials/sections/artists_section';
+
+
+

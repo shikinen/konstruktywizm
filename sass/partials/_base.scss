@@ -2,6 +2,8 @@
 
 // Media Breakpoints
 $tablet: (min-width: 768px);
+$px600: (max-width: 600px);
+$px900: (max-width: 900px);
 
 // Fonts
 $Futura: 'FuturaT', Helvetica, Arial, sans-serif;
@@ -14,8 +16,12 @@ $aqua: #2cffff;
 
 //--------------------//
 
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {

@@ -12,63 +12,43 @@
     <title>konstruktywizm</title>
     <!-- favicon -->
     <link rel="" href="">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/script.js"></script>
-
+    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
 
 <body>
 
-    <!-- header -->
-    <header class="header" id="top">
-        <a>Logo</a>
-        <nav class="main-navigation">
-            <ul>
-                <li>
-                    <a></a>
-                </li>
-                <li>
-                    <a></a>
-                </li>
-                <li>
-                    <a></a>
-                </li>
-                <li>
-                    <a></a>
-                </li>
-            </ul>
-        </nav>
+    <header id="header">
+        <div class="header-container">
+            <div class="logo-header"><img src="images/logo.svg"></div>
+            <nav>
+                <a href="#about">O stronie</a>
+                <a href="#concepts">Koncepcje</a>
+                <a href="#chronology">Chronologia</a>
+                <a href="#artists">Artyści</a>
+            </nav>
+        </div>
     </header>
-    <!-- END header -->
+     
 
     <!-- Shapes section -->
     <section class="section shapes-section">
-        <div>
-            <a><img class="shape-section__rectangle" src="images/rectangle.svg"></a>
-        </div>
 
-        <div>
-            <a><img class="shape-section__circle" src="images/circle.svg"></a>
-        </div>
 
-        <div>
-            <a><img class="shape-section__triangle" src="images/triangle.svg"></a>
-        </div>
+        <h1 class="section-shapes__text">konstruktywnie
+        </h1>
 
-        <div>
-            <a><img class="shape-section__curve" src="images/curve.svg"></a>
-        </div>
-        <div class="section-shapes__text-container">
-            <h1 class="section__title">konstruktywnie</h1>
+        <video autoplay loop id="video-background" muted plays-inline>
+  <source src="video/background-video.mp4" type="video/mp4">
+</video>
 
-            <div class="shapes-section__navigate">najeżdżaj na kolorowe kształty, aby nawigować</div>
-        </div>
 
     </section>
     <!-- END Shapes section -->
 
-    <div class="border"></div>
+    <div id="about" class="border"></div>
 
     <main class="container">
 
@@ -77,7 +57,7 @@
 
             <h1 class="section__title">czym jest ta strona?</h1>
 
-            <div class="about-section__infobox-container">
+            <div class="about-section__container">
 
                 <div class="about-section__infobox">
                     <h2>1.</h2>
@@ -99,54 +79,54 @@
         </section>
         <!-- END About section -->
 
-        <div class="border"></div>
+        <div id="concepts" class="border"></div>
 
         <!-- Concepts section -->
         <section class="section concepts-section">
 
             <h1 class="section__title">podstawowe koncepcje</h1>
 
-            <div class="concept-section__concepts-list-background">
+            <div class="concept-section__background">
 
-                <dl class="concept-section__concepts-list">
-                    <dt class="concept-section__concept">awangarda</dt>
-                    <dd class="concept-section__description"><span>awangarda</span> - nazwa ogółu wewnętrznie zróżnicowanych tendencji w sztuce XX w., zwłaszcza w jego drugim i trzecim 10-leciu (awangarda „klasyczna”), odznaczających się radykalnym nowatorstwem, skłonnością do eksperymentu i zorientowaniem na przyszłość.
+                <dl class="concept-section__concepts">
+                    <dt class="concept-section__concepts-title">awangarda</dt>
+                    <dd class="concept-section__concepts-description"> nazwa ogółu wewnętrznie zróżnicowanych tendencji w sztuce XX w., zwłaszcza w jego drugim i trzecim 10-leciu (awangarda „klasyczna”), odznaczających się radykalnym nowatorstwem, skłonnością do eksperymentu i zorientowaniem na przyszłość.
                     </dd>
 
-                    <dt class="concept-section__concept">futuryzm</dt>
-                    <dd class="concept-section__description"><span>futuryzm</span> - awangardowy kierunek w sztuce i ogólnie kulturze, narodzony we Włoszech w początkach XX wieku. Założenia programowe ujął w swym Manifeście Futuryzmu Filippo Marinetti.
+                    <dt class="concept-section__concepts-title">futuryzm</dt>
+                    <dd class="concept-section__concepts-description"> awangardowy kierunek w sztuce i ogólnie kulturze, narodzony we Włoszech w początkach XX wieku. Założenia programowe ujął w swym Manifeście Futuryzmu Filippo Marinetti.
                     </dd>
 
-                    <dt class="concept-section__concept">Inchuk</dt>
-                    <dd class="concept-section__description"><span>Inchuk</span> - Instytut Kultury Artystycznej, powstały w Moskwie. Obok Wchutemasu najważniejsza instytucja sztuki konstruktywistycznej, ogniskująca dyskurs artystyczny.
+                    <dt class="concept-section__concepts-title">Inchuk</dt>
+                    <dd class="concept-section__concepts-description"> Instytut Kultury Artystycznej, powstały w Moskwie. Obok Wchutemasu najważniejsza instytucja sztuki konstruktywistycznej, ogniskująca dyskurs artystyczny.
                     </dd>
 
-                    <dt class="concept-section__concept">konstruktywizm</dt>
-                    <dd class="concept-section__description"><span>konstruktywizm</span> - kierunek w sztuce abstrakcyjnej, rozwijany w Rosji w pierwszych dwóch dekadach XX wieku, chronologicznie przechodzący z fazy analitycznej do fazy produktywistycznej.
+                    <dt class="concept-section__concepts-title">konstruktywizm</dt>
+                    <dd class="concept-section__concepts-description"> kierunek w sztuce abstrakcyjnej, rozwijany w Rosji w pierwszych dwóch dekadach XX wieku, chronologicznie przechodzący z fazy analitycznej do fazy produktywistycznej.
                     </dd>
 
-                    <dt class="concept-section__concept">kubizm</dt>
-                    <dd class="concept-section__description"><span>kubizm</span> - jeden z protoawangardowych kierunków, którego przedstawicielami byli m. in. Pablo Picasso i Georges Braque. Kubiści dekonstruowali rzeczywistość w swych obrazach, do których budowania wykorzystywali kolaże.
+                    <dt class="concept-section__concepts-title">kubizm</dt>
+                    <dd class="concept-section__concepts-description"> jeden z protoawangardowych kierunków, którego przedstawicielami byli m. in. Pablo Picasso i Georges Braque. Kubiści dekonstruowali rzeczywistość w swych obrazach, do których budowania wykorzystywali kolaże.
                     </dd>
 
-                    <dt class="concept-section__concept">łubok</dt>
-                    <dd class="concept-section__description"><span>łubok</span> - to najczęściej drzeworyt, wykonywany na deskach lipowych lub obrazy wykonywane w technice tempery na papierze. Ikonograficznie i treściowo łuboki odwołują się do podań oraz legend rosyjskich.
+                    <dt class="concept-section__concepts-title">łubok</dt>
+                    <dd class="concept-section__concepts-description"> to najczęściej drzeworyt, wykonywany na deskach lipowych lub obrazy wykonywane w technice tempery na papierze. Ikonograficznie i treściowo łuboki odwołują się do podań oraz legend rosyjskich.
                     </dd>
 
-                    <dt class="concept-section__concept">Manifest Futuryzmu</dt>
-                    <dd class="concept-section__description"><span>Manifest Futuryzmu</span> - opublikowany w 1909 roku manifest programowy Filippa Marinettiego, zawierający główne założenia futuryzmu.
+                    <dt class="concept-section__concepts-title">Manifest Futuryzmu</dt>
+                    <dd class="concept-section__concepts-description"> opublikowany w 1909 roku manifest programowy Filippa Marinettiego, zawierający główne założenia futuryzmu.
                     </dd>
 
-                    <dt class="concept-section__concept">postimpresjonizm</dt>
-                    <dd class="concept-section__description"><span>postimpresjonizm</span> - w historiografii termin wykorzystywany do określenia sztuki twórców tworzących po impresjonistach – Cezanne’a, van Gogha i Gauguina.
+                    <dt class="concept-section__concepts-title">postimpresjonizm</dt>
+                    <dd class="concept-section__concepts-description">w historiografii termin wykorzystywany do określenia sztuki twórców tworzących po impresjonistach – Cezanne’a, van Gogha i Gauguina.
                     </dd>
 
-                    <dt class="concept-section__concept">suprematyzm</dt>
-                    <dd class="concept-section__description"><span>suprematyzm</span> - kierunek w sztuce bezprzedmiotowej (abstrakcyjnej) stworzony przez rosyjskiego artystę Kazimierza Malewicza, którego powstanie ogłosił w 1915 roku.
+                    <dt class="concept-section__concepts-title">suprematyzm</dt>
+                    <dd class="concept-section__concepts-description"> kierunek w sztuce bezprzedmiotowej (abstrakcyjnej) stworzony przez rosyjskiego artystę Kazimierza Malewicza, którego powstanie ogłosił w 1915 roku.
                     </dd>
 
-                    <dt class="concept-section__concept">Wchutemas</dt>
-                    <dd class="concept-section__description"><span>Wchutemas</span> - Moskiewski Zakład Artystyczno-Praktyczny, powołany do życia w 1920, kształcący kadry twórców z zakresu różnych dyscyplin artystycznych, ktżórego program kładł nacisk na edukcację praktyczną.
+                    <dt class="concept-section__concepts-title">Wchutemas</dt>
+                    <dd class="concept-section__concepts-description"> Moskiewski Zakład Artystyczno-Praktyczny, powołany do życia w 1920, kształcący kadry twórców z zakresu różnych dyscyplin artystycznych, ktżórego program kładł nacisk na edukcację praktyczną.
                     </dd>
 
                 </dl>
@@ -156,28 +136,88 @@
         </section>
         <!-- END Concepts section -->
 
-        <div class="border"></div>
+        <div id="chronology" class="border"></div>
 
         <!-- Chronology section -->
         <section class="section chronology-section">
 
             <h1 class="section__title">chronologia kierunku</h1>
 
-            <div>
-                <h2 id="y1870">1870</h2>
-                <h2 id="y1913">1913</h2>
-                <h2 id="y1915">1915</h2>
-                <h2 id="y1917">1917</h2>
-                <h2 id="y1919">1919</h2>
-                <h2 id="y1920">1920</h2>
-                <h2 id="y1921">1921</h2>
-                <h2 id="y1925">1925</h2>
-            </div>
+            <section class="chronology-section__timeline">
+                <ul>
+                    <li>
+                        <div id="y1870">
+                            <time>1870</time>
+                            <p>Założenie kolonii artystycznej w Abramcewie przez Sawę Mamontowa</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="y1913">
+                            <time>1913</time>
+                            <p>Opublikowanie przez Michaiła Łarionowa manifestu rajonizmu – abstrakcyjnego kierunku stworzonego razem z Popovą przez artystę</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="y1915">
+                            <time>1915</time>
+                            <p> Ostatnia wystawa futurystów w Petersburgu, zatytułowana 0.10
+                            </p>
+                            <p>
+                                Opublikowanie przez Kazimierza Malewicza manifestu suprematyzmu
+                            </p>
+                            <p>
+                                Przybycie Władysława Strzemińskiego do Moskwy
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="y1917">
+                            <time>1917</time>
+                            <p>
+                                Wybuch rewolucji październikowej i początek władzy sowieckiej
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="y1920">
+                            <time>1920</time>
+                            <p>
+                                Ukończenie projektu Pomnika III Międzynarodówki przez Władmira Tatlina
+                            </p>
+                            <p>
+                                Opublikowanie Manifestu Realistycznego przez Nauma Gabo
+                            </p>
+                            <p>
+                                Założenie w Moskiwe Inchuku i Wchutemasu
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="y1921">
+                            <time>1921</time>
+                            <p>
+                                Wystawa 5x5=25, podsumowująca dokonania konstruktywizmu fazy analitycznej
+                            </p>
+                            <p>
+                                Namalowanie przez Aleksandra Rodczenkę Tryptyku barw podstawowych
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="y1934">
+                            <time>1934</time>
+                            <p>
+                                Oficjalne zadekretowanie socrealizmu w sztuce przez Stalina. Ostateczny koniec awangardy radzieckiej
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
         </section>
         <!-- END Chronology section -->
 
-        <div class="border"></div>
+        <div id="artists" class="border"></div>
 
         <!-- Artists section -->
         <section class="section artists-section">
@@ -187,21 +227,21 @@
             <div class="artists-section__container">
 
                 <div class="artists-section__row">
-                    <a href="" class="artist-section__artist Popova">Popova</a>
-                    <a href="" class="artist-section__artist Tatlin">Tatlin</a>
-                    <a href="" class="artist-section__artist Malewicz">Malewicz</a>
+                    <a href="artists/popova.html" class="artist-section__artist Popova">Popova</a>
+                    <a href="artists/tatlin.html" class="artist-section__artist Tatlin">Tatlin</a>
+                    <a href="artists/malewicz.html" class="artist-section__artist Malewicz">Malewicz</a>
                 </div>
 
                 <div class="artists-section__row">
-                    <a href="" class="artist-section__artist Lissitzky">Lissitzky</a>
-                    <a href="" class="artist-section__artist Rodczenko">Rodczenko</a>
-                    <a href="" class="artist-section__artist Larionow">Łarionow</a>
+                    <a href="artists/lissitzky.html" class="artist-section__artist Lissitzky">Lissitzky</a>
+                    <a href="artists/rodczenko.html" class="artist-section__artist Rodczenko">Rodczenko</a>
+                    <a href="artists/larionow.html" class="artist-section__artist Larionow">Łarionow</a>
                 </div>
 
             </div>
 
         </section>
-        <!-- END Chronology section -->
+        <!-- END Artists section -->
 
     </main>
 
@@ -219,6 +259,7 @@
     </footer>
     <!-- END Chronology section -->
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>

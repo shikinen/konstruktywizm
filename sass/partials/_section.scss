@@ -1,198 +1,48 @@
 .section {
-    margin: 5em 0;
+    margin: 3em 0;
+    @media #{$tablet} {
+        margin-bottom: 5em;
+    }
 }
 
 .section__title {
-    padding-bottom: 0.5em;
     font-size: 2em;
     letter-spacing: 0.15em;
     text-align: center;
     @media #{$tablet} {
         font-size: 3em;
     }
-}
-
-//------SHAPES SECTION------//
-.shapes-section {
-    .section__title {
-        font-size: 3em;
+    &::before {
+        display: none;
         @media #{$tablet} {
-            font-size: 5em;
+            content: '';
+            display: block;
+            position: relative;
+            background-image: url(../images/coordinate_left.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px;
+            width: 50px;
+            height: 45px;
+            top: 57px;
+            left: -14px;
+        }
+    }
+    &::after {
+        display: none;
+        @media #{$tablet} {
+            content: '';
+            display: block;
+            position: relative;
+            background-image: url(../images/coordinate_right.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px;
+            width: 50px;
+            height: 40px;
+            bottom: 57px;
+            right: -1162px;
         }
     }
 }
 
-.section-shapes__text-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin: 0 2em;
-}
-
-.shape-section__rectangle {
-    width: 180px;
-}
-
-.shape-section__circle {
-    width: 140px;
-}
-
-.shape-section__triangle {
-    width: 130px;
-}
-
-.shape-section__curve {
-    width: 340px;
-}
-
-//------ABOUT SECTION------//
-.about-section__infobox-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media #{$tablet} {
-        flex-direction: row;
-    }
-}
-
-.about-section__infobox {
-    text-align: center;
-    padding: 0.5em 2em;
-    width: 25em;
-    @media #{$tablet} {
-        flex: 1;
-    }
-    h2 {
-        color: $red;
-        font-size: 3em;
-        @media #{$tablet} {
-            font-size: 4em;
-        }
-    }
-}
-
-//------CONCEPTS SECTION------//
-.concept-section__concepts-list-background {
-    background-color: $red;
-    background-image: -webkit-linear-gradient(-67.5deg, #000 50%, $red 50%);
-    min-height: 500px;
-}
-
-.concept-section__concepts-list {
-    color: white;
-    margin-top: 0.5em;
-    font-size: 1.2em;
-    padding: 2em 3em;
-    @media #{$tablet} {
-        padding: 4em 5em;
-    }
-}
-
-.concept-section__concept {
-    color: aqua;
-    padding-bottom: 1em;
-    font-size: 2em;
-    text-align: center;
-    @media #{$tablet} {
-        font-size: 2.5em;
-    }
-}
-
-.concept-section__description {
-    span {
-        color: aqua;
-    }
-}
-
-//------CHRONOLOGY SECTION------//
-#y1870 {
-    color: #0599fa;
-}
-
-#y1913 {
-    color: #6475fc;
-}
-
-#y1915 {
-    color: #8b67fd;
-}
-
-#y1917 {
-    color: #b556fe;
-}
-
-#y1919 {
-    color: #c252fe;
-}
-
-#y1920 {
-    color: #ca4ffe;
-}
-
-#y1921 {
-    color: #de47ff;
-}
-
-#y1925 {
-    color: #eb42ff;
-}
-
-//------ARTISTS SECTION------//
-.artists-section__container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2em;
-    margin-top: 0.5em;
-}
-
-.artists-section__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    @media #{$tablet} {
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-
-.artist-section__artist {
-    color: $orange;
-    text-decoration: none;
-    padding: 0 5px;
-    @media #{$tablet} {
-        flex-basis: 31%;
-    }
-}
-
-.artists-section__row:nth-child(2n) {
-    @media #{$tablet} {
-        display: flex;
-        justify-content: flex-end;
-        text-align: right;
-    }
-}
-
-.Popova {
-    font-size: 2.5em;
-}
-
-.Tatlin {
-    font-size: 4em;
-}
-
-.Malewicz {
-    font-size: 4.5em;
-}
-
-.Lissitzky {
-    font-size: 4em;
-}
-
-.Rodczenko {
-    font-size: 3.5em;
-}
-
-.Larionow {
-    font-size: 3em;
-}
