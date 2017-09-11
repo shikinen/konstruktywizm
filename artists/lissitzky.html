@@ -12,7 +12,6 @@
     <!-- favicon -->
     <link rel="" href="">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/additional.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
@@ -22,59 +21,77 @@
 
     <header id="header">
         <div class="header-container">
-            <div class="logo-header"><img src="images/logo.svg"></div>
+            <div class="logo-header">
+                <a href="../index.html"><img src="../images/logo.svg" alt="Logo konstruktywnie"></a>
+            </div>
             <nav>
-                <a href="#about">O stronie</a>
-                <a href="#concepts">Koncepcje</a>
-                <a href="#chronology">Chronologia</a>
-                <a href="#artists">Artyści</a>
+                <a href="../index.html#about">O stronie</a>
+                <a href="../index.html#concepts">Koncepcje</a>
+                <a href="../index.html#chronology">Chronologia</a>
+                <a href="../index.html#artists">Artyści</a>
             </nav>
         </div>
     </header>
+
+    <nav class="artists-nav">
+        <a href="popova.html">Popova</a>
+        <a href="tatlin.html">Tatlin</a>
+        <a href="malewicz.html">Malewicz</a>
+        <a href="lissitzky.html" class="selected">Lissitzky</a>
+        <a href="rodczenko.html">Rodczenko</a>
+        <a href="larionow.html">Łarionow</a>
+    </nav>
 
     <main class="container">
 
         <!-- BIO section -->
         <section class="section bio-section">
 
-            <h1 class="section__title name">El Lissitzky</h1>
+            <h1 class="section__title bio-section__name">El Lissitzky</h1>
 
-            <div class="lifespan"><span class="birth">Poczynok</span> 1890 – 1941 <span class="death">Moskwa</span> </div>
+            <div class="bio-section__lifespan"><span class="birth">Poczynok</span> 1890 – 1941 <span class="death">Moskwa</span>
 
-            <div class="about-section__infobox-container">
+            </div>
 
-                <div class="bio">
+            <div class="bio-section__container">
+
+                <p class="bio-section__biography">
                     Urodzony w rodzinie żydowskiej. Studiował architekturę na Wyższej Szkole Technicznej w Darmstadt. Zgłębiał żydowską sztukę i architekturę oraz ornamentykę w starych synagogach. W 1919 został profesorem w Szkole Sztuk Pięknych w Witebsku. Poznał tam artystów reprezentujących różne kierunki malarskie, m.in. Marca Chagalla i Kazimierza Malewicza. Od 1921 do 1925 roku pracował w różnych krajach Europy: Niemczech, Holandii i Szwajcarii, będąc jednocześnie od 1921 roku profesorem na Akademii Sztuk Pięknych w Moskwie. W 1925 roku wrócił jednak z Zachodu do Moskwy i zaangażował się w pracę w postrewolucyjnej szkole – Wchutiemasie. Lissitzky pracował również dla międzynarodowej gazety „ZSRR w architekturze”. Ponadto pomiędzy 1923 a 1925 zaprojektował „Wolkenbügel”, znany w Polsce jako Wygładzacz Chmur – zespół nowoczesnych, oszklonych wieżowców w Moskwie.
-                </div>
+                </p>
 
             </div>
 
         </section>
         <!-- END BIO section -->
 
+        <!-- WORKS section -->
         <div class="border"></div>
 
-        <section class="section">
+        <section class="section section-works">
 
-            <h1 class="section__title works">najważniejsze prace</h1>
+            <h1 class="section__title">najważniejsze prace</h1>
 
-            <div id="slider">
-  <a href="#" class="control_next">o</a>
-  <a href="#" class="control_prev">o</a>
-  <ul>
-    <li>SLIDE 1</li>
-    <li style="background: #aaa;">SLIDE 2</li>
-    <li>SLIDE 3</li>
-    <li style="background: #aaa;">SLIDE 4</li>
-  </ul>  
-</div>
+            <div class="section-works__works">
+                <figure>
+                    <img src="../images/works/tatlin/pomnik_III_miedzynarodowki.jpg" alt="Pomnik III międzynarodowki">
+                    <figcaption>Pomnik III międzynarodówki, 1919 r.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/works/tatlin/relief_1914.jpg" alt="Relief 1914 r.">
+                    <figcaption>Relief, 1914 r.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/works/tatlin/relief_1915.jpg" alt="Relief 1914 r.">
+                    <figcaption>Relief, 1915 r.</figcaption>
+                </figure>
+            </div>
 
         </section>
-        <!-- END BIO section -->
+        <!-- END WORKS section -->
     </main>
-    
+
     <div class="border"></div>
-    
+
     <!-- Footer section -->
     <footer class="footer">
 
@@ -86,8 +103,8 @@
 
     </footer>
     <!-- END Footer section -->
-    
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>

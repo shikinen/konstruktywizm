@@ -1,18 +1,48 @@
-.bio-section {
-    margin-right: 2em;
-    margin-left: 2em;
+//------ARTISTS NAV------//
+.artists-nav {
     margin-top: 10em;
+    border: 1px solid $orange;
+    border-left: none;
+    border-right: none;
+    padding: 2em 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    @media #{$tablet} {
-        margin-right: 0;
-        margin-left: 0;
+    flex-direction: column;
+    @media all and (min-width: 900px) {
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    a {
+        display: block;
+        color: $orange;
+        font-size: 2em;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            color: $red;
+        }
+        &.selected {
+            color: $red;
+        }
     }
 }
 
+//------BIO------//
+.bio-section {
+    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bio-section__name {
-    padding-bottom: 0;
+    &::before,
+    &::after {
+        display: none;
+    }
 }
 
 .bio-section__lifespan {
@@ -32,7 +62,32 @@
     }
 }
 
-.bio-section_biography {
+.bio-section__biography {
     margin-top: 2em;
     text-align: justify;
+}
+
+//------WORKS------//
+.section-works {
+    .section__title {
+        font-size: 2em;
+        color: $red;
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.section-works__works {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    figure {
+        margin: 2em;
+        figcaption {
+            text-align: center;
+            margin-top: 0.5em;
+        }
+    }
 }

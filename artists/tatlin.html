@@ -12,7 +12,6 @@
     <!-- favicon -->
     <link rel="" href="">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/additional.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
@@ -22,55 +21,71 @@
 
     <header id="header">
         <div class="header-container">
-            <div class="logo-header"><img src="images/logo.svg"></div>
+            <div class="logo-header">
+                <a href="../index.html"><img src="../images/logo.svg" alt="Logo konstruktywnie"></a>
+            </div>
             <nav>
-                <a href="#about">O stronie</a>
-                <a href="#concepts">Koncepcje</a>
-                <a href="#chronology">Chronologia</a>
-                <a href="#artists">Artyści</a>
+                <a href="../index.html#about">O stronie</a>
+                <a href="../index.html#concepts">Koncepcje</a>
+                <a href="../index.html#chronology">Chronologia</a>
+                <a href="../index.html#artists">Artyści</a>
             </nav>
         </div>
     </header>
+
+    <nav class="artists-nav">
+        <a href="popova.html">Popova</a>
+        <a href="tatlin.html" class="selected">Tatlin</a>
+        <a href="malewicz.html">Malewicz</a>
+        <a href="lissitzky.html">Lissitzky</a>
+        <a href="rodczenko.html">Rodczenko</a>
+        <a href="larionow.html">Łarionow</a>
+    </nav>
 
     <main class="container">
 
         <!-- BIO section -->
         <section class="section bio-section">
 
-            <h1 class="section__title name">Władimir Tatlin</h1>
+            <h1 class="section__title bio-section__name">Władimir Tatlin</h1>
 
-            <div class="lifespan"><span class="birth">Charków</span> 1885 – 1953 <span class="death">Moskwa</span> </div>
+            <div class="bio-section__lifespan"><span class="birth">Charków</span> 1885 – 1953 <span class="death">Moskwa</span> </div>
 
-            <div class="about-section__infobox-container">
+            <div class="bio-section__container">
 
-                <div class="bio">
-                    rosyjski malarz i architekt. Zaczął swoją karierę w Moskwie jako ikonopis. W roku 1920 zdobył sławę projektem Pomnika III Międzynarodówki (Wieży Tatlina, wys. około 400 metrów); wysokie koszty uniemożliwiły rozpoczęcie budowy. Tatlin był również założycielem rosyjskiego konstruktywizmu. Stwarzał kompozycje o formach geometrycznych, demonstrując dyscyplinę ładu i porządku. Rozwijał te zagadnienia w abstrakcyjnych kompozycjach powstałych w 1911 roku, a zatytułowanych Reliefy. Uległ kubizmowi po podróży do Paryża. W latach 1914-1915 rozwijał ideę "kultury materiałów" w Reliefach narożnych, które zostały tak nazwane ze względu na sposób zawieszenia ich w rogach sal wystawowych. Poprzez swoje Reliefy zapoczątkował łączenie cech malarstwa, rzeźby i architektury. Podczas pobytu w Leningradzie zaprojektował "Letatlin" – latającą maszynę poruszaną siłą mięśni. Po roku 1935 poświęcił się scenografii.
-                </div>
+                <p class="bio-section__biography">
+                    Rosyjski malarz i architekt. Zaczął swoją karierę w Moskwie jako ikonopis. W roku 1920 zdobył sławę projektem Pomnika III Międzynarodówki (Wieży Tatlina, wys. około 400 metrów); wysokie koszty uniemożliwiły rozpoczęcie budowy. Tatlin był również założycielem rosyjskiego konstruktywizmu. Stwarzał kompozycje o formach geometrycznych, demonstrując dyscyplinę ładu i porządku. Rozwijał te zagadnienia w abstrakcyjnych kompozycjach powstałych w 1911 roku, a zatytułowanych Reliefy. Uległ kubizmowi po podróży do Paryża. W latach 1914-1915 rozwijał ideę "kultury materiałów" w Reliefach narożnych, które zostały tak nazwane ze względu na sposób zawieszenia ich w rogach sal wystawowych. Poprzez swoje Reliefy zapoczątkował łączenie cech malarstwa, rzeźby i architektury. Podczas pobytu w Leningradzie zaprojektował "Letatlin" – latającą maszynę poruszaną siłą mięśni. Po roku 1935 poświęcił się scenografii.
+                </p>
 
             </div>
 
         </section>
         <!-- END BIO section -->
 
+        <!-- WORKS section -->
         <div class="border"></div>
 
-        <section class="section">
+        <section class="section section-works">
 
-            <h1 class="section__title works">najważniejsze prace</h1>
+            <h1 class="section__title">najważniejsze prace</h1>
 
-            <div id="slider">
-                <a href="#" class="control_next">o</a>
-                <a href="#" class="control_prev">o</a>
-                <ul>
-                    <li>SLIDE 1</li>
-                    <li style="background: #aaa;">SLIDE 2</li>
-                    <li>SLIDE 3</li>
-                    <li style="background: #aaa;">SLIDE 4</li>
-                </ul>
+            <div class="section-works__works">
+                <figure>
+                <img src="../images/works/tatlin/pomnik_III_miedzynarodowki.jpg" alt="Pomnik III międzynarodowki">
+                <figcaption>Pomnik III międzynarodówki, 1919 r.</figcaption>
+                </figure>
+                <figure>
+                <img src="../images/works/tatlin/relief_1914.jpg" alt="Relief 1914 r.">
+                <figcaption>Relief, 1914 r.</figcaption>
+                </figure>
+                <figure>
+                <img src="../images/works/tatlin/relief_1915.jpg" alt="Relief 1914 r.">
+                <figcaption>Relief, 1915 r.</figcaption>
+                </figure>    
             </div>
 
         </section>
-        <!-- END BIO section -->
+        <!-- END WORKS section -->
     </main>
 
     <div class="border"></div>
@@ -87,6 +102,7 @@
     </footer>
     <!-- END Footer section -->
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>

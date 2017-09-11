@@ -1,27 +1,24 @@
 //------VARIABLES------//
-
 // Media Breakpoints
 $tablet: (min-width: 768px);
 $px600: (max-width: 600px);
 $px900: (max-width: 900px);
-
 // Fonts
-$Futura: 'FuturaT', Helvetica, Arial, sans-serif;
-
+$Futura: 'FuturaT',
+Helvetica,
+Arial,
+sans-serif;
 // Colors
-
 $red: #f2224a;
 $orange: #ffc83e;
 $aqua: #2cffff;
-
 //--------------------//
-
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -37,7 +34,12 @@ body {
 
 .border {
     margin: 0 auto;
-    width: 950px;
-    height: 40px;
-    background: url(../images/border.svg);
+    background: url(../images/border_small.svg);
+    width: 475px;
+    height: 20px;
+    @media all and (min-width: 950px) {
+        width: 950px;
+        height: 40px;
+        background: url(../images/border.svg);
+    }
 }
