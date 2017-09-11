@@ -1,6 +1,11 @@
 .concept-section__background {
     background-color: $red;
-    background-image: -webkit-linear-gradient(-30deg, #000 50%, $red 50%);
+    background-image: linear-gradient(-20deg, #000 50%, $red 50%);
+    background-image: -webkit-linear-gradient(-20deg, #000 50%, $red 50%);
+    @media #{$tablet} {
+        background-image: linear-gradient(-30deg, #000 50%, $red 50%);
+        background-image: -webkit-linear-gradient(-30deg, #000 50%, $red 50%);
+    }
     min-height: 500px;
 }
 

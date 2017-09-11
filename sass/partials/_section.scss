@@ -14,7 +14,7 @@
     }
     &::before {
         display: none;
-        @media #{$tablet} {
+        @media all and (min-width: 1200px) {
             content: '';
             display: block;
             position: relative;
@@ -30,7 +30,7 @@
     }
     &::after {
         display: none;
-        @media #{$tablet} {
+        @media all and (min-width: 1200px) {
             content: '';
             display: block;
             position: relative;
